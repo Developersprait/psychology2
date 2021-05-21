@@ -1,0 +1,63 @@
+.description
+    &-box
+        margin: 90px 0
+    &-items
+        display: flex
+        justify-content: center
+    &-pretitle
+        font-family: $playfair
+        color: $gray
+        font-style: italic
+        font-size: 1.5rem
+    &-title
+        font-family: $playfair
+        color: $brown
+        text-transform: uppercase
+        font-size: 2.9rem
+        font-weight: 500
+        line-height: 90px
+    &-block
+        margin: 20px 0    
+    &-note
+        color: $gray 
+        font-size: 1.5rem  
+    &-link
+        text-decoration: none
+        color: $gray  
+        font-size: 1.3rem
+        line-height: 45px
+    &-link:hover
+        color: $brown       
+.description-right
+     background: url(../img/1.jpg)
+     background-repeat: no-repeat
+     background-size: contain
+     background-position: center
+     width: 404px
+     height: 402px
+     border-radius: 17px
+     margin-left: 40px
+.button-wrapper
+    margin-top: 50px
+
+@media screen and ( max-width:992px  )
+    .description
+        &-box
+            margin-top: 40px
+        &-items
+           flex-direction: column-reverse
+        &-right
+            width: auto    
+            margin-left: 0 
+        &-pretitle
+            text-align: center
+        &-title
+            line-height: 40px
+            font-size: 2rem
+            text-align: center
+            margin-top: 20px
+        &-block
+            text-align: center
+    .button-wrapper 
+        text-align: center                            
+     

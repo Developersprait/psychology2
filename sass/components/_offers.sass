@@ -1,0 +1,86 @@
+.offers
+    margin-top: 100px
+    &-title
+        text-align: center
+        font-family: $playfair
+        font-size: 2rem
+        color: $gray
+        letter-spacing: 2px
+        margin-bottom: 50px
+    &-item
+        &-first,
+        &-second
+            display: flex
+            justify-content: space-around
+            width: 75%
+            margin: 0 auto
+            margin-bottom: 50px
+    &-left,
+    &-right
+        width: 50%
+        border: 1px solid $brown
+        padding: 20px
+        margin: 0 10px  
+        text-align: center 
+    &-btn
+        text-align: center
+        margin: 35px 0 25px 
+.left-title,
+.right-title
+    text-align: center
+    text-transform: uppercase
+    color: $gray
+    margin-bottom: 20px
+    font-style: italic 
+    font-size: 1.4rem 
+.left-text,
+.right
+    &-text
+    text-align: center
+    line-height: 24px
+    &-subtext
+        margin-top: 26px
+        font-size: 1.2rem
+        span
+            text-decoration: underline
+            color: $brown
+            cursor: pointer 
+.directions
+    &-left,
+    &-right
+        border: 1px solid $brown
+        padding: 17px
+        text-align: center
+        line-height: 24px
+        font-size: 1.3rem
+        color: $gray
+        font-weight: 600
+        margin-top: 0
+        li
+            text-align: left  
+            font-weight: normal 
+            margin-top: 5px 
+            list-style-type: none
+        li:before
+            content: '\2022'
+            color: $brown  
+            font-size: 2rem
+            margin-right: 5px 
+@media screen and ( max-width:992px  )
+    .offers
+        &-title
+            letter-spacing: 1px
+        &-item
+            display: block    
+        &-left
+            margin-bottom: 30px    
+        &-left,
+        &-right
+            width: 100%
+        &-btn
+            a 
+                padding: 10px
+                text-transform: none
+    .left-title,
+    .right-title
+        font-size: 1.2rem                                                      

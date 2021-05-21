@@ -1,0 +1,53 @@
+.menu
+    &-box
+        display: flex
+    &-label
+        font-family: $playfair
+        font-size: 3.5rem 
+        color: $brown
+        line-height: 55px   
+    li
+        display: inline-block
+        padding-top: 10px   
+    a
+        text-decoration: none
+        color: $gray
+        margin-right:  20px
+    a:hover
+      color: #000
+.header__btn-menu
+    display: none
+    background: url(../img/button.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: 20px
+    height: 20px      
+
+@media screen and ( max-width: 900px )
+    .header__btn-menu
+        display: block
+        width: 30px
+        height: 30px
+        margin: 17px
+    .menu
+        &-box
+            padding-left: 20px
+            justify-content: space-between
+        ul
+            margin: 0 auto
+            display: none
+            position: absolute
+            left: 0
+            right: 0
+            z-index: 50
+        li
+            display: block
+            text-align: center
+        a
+            display: block
+            background-color: $gray
+            color: #fff
+            padding: 15px 0       
+       
+         

@@ -1,0 +1,90 @@
+@import 'elements'
+*
+     box-sizing: border-box
+     @include monsterat
+
+body
+    background-color: $basic
+    margin: 0
+    overflow-x: hidden
+
+.container
+    max-width: 1170px
+    margin: 0 auto  
+.banch
+    background: url(../img/banch.png)
+    position: absolute
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    width: 100px
+    height: 162px
+    top: -6%
+    right: 20%
+    z-index: 1
+.banch2
+    background: url(../img/banch1.png)
+    position: absolute
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    width: 202px
+    height: 66px
+    left: -6%
+    z-index: 0 
+.banch3
+    background: url(../img/banch2.png)
+    position: absolute
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    width: 202px
+    height: 66px  
+    right: -5%  
+.banch4
+    background: url(../img/banch3.png)
+    position: relative
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+    width: 101px
+    height: 240px
+    right: -41%        
+.default__btn
+    @include button    
+.default__btn:hover
+    @include button-hover   
+#btn-modal
+    @include button
+    padding: 10px 30px
+    margin-bottom: 20px 
+#btn-modal:hover
+    @include button-hover           
+
+@media screen and ( max-width:1024px  ) 
+    .banch2
+        left: -8%            
+
+@media screen and ( max-width:992px  )
+    .container
+        max-width: 960px
+
+@media screen and ( max-width:768px  )
+    .container
+        max-width: 720px
+    .banch2
+        left: -11%         
+
+@media screen and ( max-width:576px  )
+    .container
+        max-width: 540px
+    .banch2
+        left: -15%       
+         
+@media screen and ( max-width:480px  )
+    .container
+        max-width: 440px
+    .banch2
+        left: -25%                         
+
+    

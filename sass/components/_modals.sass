@@ -1,0 +1,71 @@
+
+#modal
+    display: none
+    width: 440px
+    background-color: $basic
+    h2
+        text-align: center
+        font-family: $playfair
+        color: $gray
+        font-size: 1.5rem
+        font-style: italic
+    p
+        text-align: center
+        font-size: 1.2rem
+        color: $brown
+           
+.input
+    display: block
+    width: 100%
+    height: 50px
+    margin-top: 20px
+    background-color: #e5e5e5
+    border: none   
+    padding-left: 10px
+    color: $gray
+.agreement
+    text-align: justify
+    color: $gray    
+.modal-link
+    text-decoration: none
+    color: $brown 
+//education    
+#modal-about,
+#modal-oferta,
+#modal-confidence
+    display: none
+    width: 70%     
+.education
+    &-title
+        text-align: center
+        font-family: $playfair  
+        font-size: 1.5rem
+        margin-bottom: 30px
+        color: $gray
+    &-text
+        line-height: 25px
+        text-align: justify
+        color: $gray
+#e1
+    @include education('../img/e1.jpg', 340px, 234px)
+#e2
+    @include education('../img/e2.jpg', 340px, 241px)
+#e3
+    @include education('../img/e3.jpg', 240px, 341px)
+#e4
+    @include education('../img/e4.jpg', 340px, 240px)
+#e5
+    @include education('../img/e5.jpg', 240px, 340px)                       
+@media screen and ( max-width:992px  )  
+    #modal-about,
+    #modal-oferta,
+    #modal-confidence
+        width: 90%
+        padding: 20px    
+@media screen and ( max-width:480px  )
+    #e1,#e2,#e3,#e4,#e5
+        width: auto 
+    #e1,#e2,#e4
+        height: 165px                     
+
+            

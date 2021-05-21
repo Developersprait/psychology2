@@ -1,0 +1,42 @@
+.header
+    background-color: $brown
+    height: 30px
+    position: relative
+    z-index: 10
+    &-items
+        display: flex
+        justify-content: space-between
+    &-left
+        display: flex
+        a
+            img
+                height: 20px
+                width: 20px
+                margin-right: 20px
+                margin-top: 4px
+            img:hover
+                opacity: 0.5
+    &-right
+        display: flex
+        justify-content: center
+        a
+            text-decoration: none
+            color: #fff
+            margin-right: 15px
+            img
+                height: 20px
+                width: 16px
+                margin-right: 5px
+                padding-top: 4px
+        a:hover
+            opacity: 0.5  
+
+@media screen and ( max-width:516px  )
+    .header
+        &-items
+            justify-content: center
+        &-left
+            &-label
+                margin-left: 0
+        &-right
+            display: none

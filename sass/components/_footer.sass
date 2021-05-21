@@ -1,0 +1,89 @@
+.footer
+    background-color: $gray
+    color: #fff
+    &-items
+        display: flex
+        margin: 0 auto
+        justify-content: space-evenly
+    &-item
+        padding: 20px
+        width: 33%
+        &-second
+            background: url('../img/labels.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            width: 220px
+            height: 383px
+            margin-top: 20px
+    &-box
+        margin: 0 auto        
+    &-phone
+        display: flex
+        width: 150px
+        margin: 0 auto
+        margin-top: 50px
+        margin-bottom: 50px
+        &-link
+            color: #fff
+            text-decoration: none
+            margin-left: 10px
+            font-size: 1.2rem
+        &-img
+            background: url('../img/phone.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            width: 20px
+            height: 20px
+    &-email
+        display: flex
+        width: 190px
+        margin: 0 auto
+        margin-bottom: 50px
+        &-link
+            color: #fff
+            text-decoration: none
+            margin-left: 10px
+            font-size: 1.2rem
+        &-img
+            background: url('../img/email.png')
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            width: 20px
+            height: 20px 
+    &-links
+        display: flex
+        justify-content: space-around
+        &-wrapper
+            width: 20px
+            height: 20px
+        &-wrapper:hover
+            opacity: 0.5    
+
+    &-socials1
+        @include socials('../img/facebook.png')
+    &-socials2
+        @include socials('../img/insta.png')
+    &-socials3
+        @include socials('../img/viber.png')   
+    &-socials4
+        @include socials('../img/skype.png')
+    &-socials5
+        @include socials('../img/telegram.png')
+.info
+    background-color: #000
+    color: #fff
+    padding: 5px
+    text-align: center
+    span
+        font-size: 0.5rem            
+@media screen and ( max-width:992px  )
+    .footer
+        &-items
+            display: block
+        &-item
+            width: 100%
+            &-second
+                height: 556px                                    

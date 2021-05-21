@@ -1,0 +1,50 @@
+$playfair: 'Playfair Display', serif !global
+$brown: #b18373 !global
+$gray: #716864 !global
+$basic: #f9f6f7 !global
+
+@mixin monsterat
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
+
+@mixin button
+    background-color: $brown
+    color: #fff
+    padding: 15px 50px
+    border-radius: 55px
+    text-transform: uppercase
+    letter-spacing: 1px
+    text-decoration: none
+    border: 1px solid $brown
+    transition: .3s all
+
+@mixin button-hover  
+    background-color: $basic
+    color: $brown  
+
+@mixin education($url, $width, $height)  
+    background: url($url)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: $width
+    height: $height      
+    margin: 0 auto
+    margin-top: 30px
+
+@mixin contacts($url)
+    background: url($url)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: 30px
+    height: 30px     
+    margin: 0 auto 
+@mixin socials($url)  
+    background: url($url)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    width: 20px
+    height: 20px        
+        
