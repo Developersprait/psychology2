@@ -399,6 +399,12 @@ body {
   color: #b18373;
 }
 
+#modal-payback p {
+  line-height: 25px;
+  text-align: justify;
+  color: #716864;
+}
+
 .input {
   display: block;
   width: 100%;
@@ -422,7 +428,8 @@ body {
 
 #modal-about,
 #modal-oferta,
-#modal-confidence {
+#modal-confidence,
+#modal-payback {
   display: none;
   width: 70%;
 }
@@ -499,7 +506,8 @@ body {
 @media screen and (max-width: 992px) {
   #modal-about,
   #modal-oferta,
-  #modal-confidence {
+  #modal-confidence,
+  #modal-payback {
     width: 90%;
     padding: 20px;
   }
@@ -850,6 +858,19 @@ body {
 .pay-alfa span {
   color: #716864;
   font-size: 0.8rem;
+}
+
+.payback {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .payback-btn {
+    padding: 5px;
+    text-transform: none;
+    letter-spacing: normal;
+  }
 }
 
 .footer {
