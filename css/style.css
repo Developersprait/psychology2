@@ -429,7 +429,8 @@ body {
 #modal-about,
 #modal-oferta,
 #modal-confidence,
-#modal-payback {
+#modal-payback,
+#modal-product {
   display: none;
   width: 70%;
 }
@@ -507,7 +508,8 @@ body {
   #modal-about,
   #modal-oferta,
   #modal-confidence,
-  #modal-payback {
+  #modal-payback,
+  #modal-product {
     width: 90%;
     padding: 20px;
   }
@@ -860,7 +862,8 @@ body {
   font-size: 0.8rem;
 }
 
-.payback {
+.payback,
+.products {
   text-align: center;
   margin-top: 40px;
 }
@@ -1040,6 +1043,7 @@ body {
   }
   .footer-item-second {
     height: 556px;
+    background-size: contain;
   }
 }
 
